@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cromis Digital — Wave Logo Concepts</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0d0d0d; font-family: 'Inter', sans-serif; padding: 48px 20px; }
+  h1 { color: #fff; text-align: center; font-size: 11px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 48px; opacity: 0.3; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 900px; margin: 0 auto; }
+  .card {
+    background: #141414;
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .card.light { background: #f4efe6; border-color: #ddd; }
+  .label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #444; margin-bottom: 8px; }
+  .card.light .label { color: #aaa; }
+  .full { grid-column: span 2; }
+</style>
+</head>
+<body>
+<h1>Cromis Digital — Wave Concepts</h1>
+<div class="grid">
+
+  <!-- V1: Bold gradient waves, strong wordmark -->
+  <div class="card">
+    <span class="label">Version 1 — Bold & Clean</span>
+    <svg width="260" height="80" viewBox="0 0 260 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#00c6ff"/>
+          <stop offset="100%" stop-color="#0072ff"/>
+        </linearGradient>
+      </defs>
+      <path d="M6 22 Q18 10 30 22 Q42 34 54 22" stroke="url(#g1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M6 34 Q18 22 30 34 Q42 46 54 34" stroke="url(#g1)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.55"/>
+      <text x="68" y="32" font-family="'Playfair Display', Georgia, serif" font-size="26" font-weight="800" fill="#ffffff" letter-spacing="0.5">Cromis</text>
+      <text x="70" y="50" font-family="'Inter', sans-serif" font-size="10.5" font-weight="600" fill="#00c6ff" letter-spacing="5.5">DIGITAL</text>
+    </svg>
+  </div>
+
+  <!-- V2: Icon stacked above text, centered -->
+  <div class="card">
+    <span class="label">Version 2 — Stacked Icon</span>
+    <svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g2" x1="60" y1="0" x2="140" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#00c6ff"/>
+          <stop offset="100%" stop-color="#0072ff"/>
+        </linearGradient>
+      </defs>
+      <path d="M65 22 Q80 10 95 22 Q110 34 125 22 Q140 10 155 22" stroke="url(#g2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M65 34 Q80 22 95 34 Q110 46 125 34 Q140 22 155 34" stroke="url(#g2)" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.45"/>
+      <text x="100" y="64" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="1" text-anchor="middle">Cromis</text>
+      <text x="100" y="80" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#00c6ff" letter-spacing="6" text-anchor="middle">DIGITAL</text>
+    </svg>
+  </div>
+
+  <!-- V3: Contained box mark + wordmark -->
+  <div class="card">
+    <span class="label">Version 3 — Icon Badge</span>
+    <svg width="270" height="72" viewBox="0 0 270 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g3" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#00c6ff"/>
+          <stop offset="100%" stop-color="#0050cc"/>
+        </linearGradient>
+        <linearGradient id="gw" x1="8" y1="0" x2="44" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="100%" stop-color="#aaddff"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="56" height="56" rx="12" fill="url(#g3)"/>
+      <path d="M10 24 Q18 16 26 24 Q34 32 42 24 Q50 16 58 24" stroke="url(#gw)" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M10 34 Q18 26 26 34 Q34 42 42 34 Q50 26 58 34" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.45"/>
+      <text x="72" y="34" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="0.5">Cromis</text>
+      <text x="73" y="52" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#00c6ff" letter-spacing="5.5">DIGITAL</text>
+    </svg>
+  </div>
+
+  <!-- V4: Gold/navy premium feel -->
+  <div class="card">
+    <span class="label">Version 4 — Gold & Navy</span>
+    <svg width="260" height="80" viewBox="0 0 260 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g4" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#f5c842"/>
+          <stop offset="100%" stop-color="#e8a020"/>
+        </linearGradient>
+      </defs>
+      <path d="M6 22 Q18 10 30 22 Q42 34 54 22" stroke="url(#g4)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M6 34 Q18 22 30 34 Q42 46 54 34" stroke="url(#g4)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+      <text x="68" y="32" font-family="'Playfair Display', Georgia, serif" font-size="26" font-weight="800" fill="#ffffff" letter-spacing="0.5">Cromis</text>
+      <text x="70" y="50" font-family="'Inter', sans-serif" font-size="10.5" font-weight="600" fill="#f5c842" letter-spacing="5.5">DIGITAL</text>
+    </svg>
+  </div>
+
+  <!-- Light bg row -->
+  <div class="card light full">
+    <span class="label">Light Background — Versions 1 & 3</span>
+    <div style="display:flex; gap:60px; align-items:center; justify-content:center; flex-wrap:wrap; padding-top:8px;">
+      <svg width="240" height="72" viewBox="0 0 260 80" fill="none">
+        <defs>
+          <linearGradient id="g1l" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#0072ff"/>
+            <stop offset="100%" stop-color="#00c6ff"/>
+          </linearGradient>
+        </defs>
+        <path d="M6 22 Q18 10 30 22 Q42 34 54 22" stroke="url(#g1l)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M6 34 Q18 22 30 34 Q42 46 54 34" stroke="url(#g1l)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.45"/>
+        <text x="68" y="32" font-family="'Playfair Display', Georgia, serif" font-size="26" font-weight="800" fill="#0d1f3c" letter-spacing="0.5">Cromis</text>
+        <text x="70" y="50" font-family="'Inter', sans-serif" font-size="10.5" font-weight="600" fill="#0050cc" letter-spacing="5.5">DIGITAL</text>
+      </svg>
+      <svg width="240" height="64" viewBox="0 0 270 72" fill="none">
+        <defs>
+          <linearGradient id="g3l" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#0072ff"/>
+            <stop offset="100%" stop-color="#0040aa"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="56" height="56" rx="12" fill="url(#g3l)"/>
+        <path d="M10 24 Q18 16 26 24 Q34 32 42 24 Q50 16 58 24" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+        <path d="M10 34 Q18 26 26 34 Q34 42 42 34 Q50 26 58 34" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.45"/>
+        <text x="72" y="34" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="800" fill="#0d1f3c" letter-spacing="0.5">Cromis</text>
+        <text x="73" y="52" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#0050cc" letter-spacing="5.5">DIGITAL</text>
+      </svg>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
