@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ScrollReveal from '../components/ScrollReveal';
+import InteractiveDotGrid from '../components/InteractiveDotGrid';
 import '../src/styles/home.css';
 
 export const metadata = {
@@ -68,7 +69,7 @@ export default function HomePage() {
     <main>
       {/* Hero */}
       <section className="hero">
-        <div className="hero-dot-grid" />
+        <InteractiveDotGrid />
         <div className="hero-glow" />
         <div className="container">
           <div className="hero-content">
