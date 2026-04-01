@@ -34,7 +34,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="footer-tagline">
-              Local digital marketing built for small businesses. Based in Oldtown, FL.
+              Local digital marketing built for small businesses. Based in Old Town, FL.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function Footer() {
             <ul>
               <li><a href="tel:+13529497355">(352) 949-7355</a></li>
               <li><a href="mailto:TreyHolland@cromisdigital.com">TreyHolland@cromisdigital.com</a></li>
-              <li><span style={{ color: 'var(--gray)' }}>Oldtown, FL</span></li>
+              <li><span style={{ color: 'var(--gray)' }}>Old Town, FL</span></li>
             </ul>
           </div>
         </div>

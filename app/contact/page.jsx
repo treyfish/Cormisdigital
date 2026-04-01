@@ -62,7 +62,7 @@ export default function ContactPage() {
                     </div>
                     <div className="contact-detail-content">
                       <span className="contact-detail-label">Location</span>
-                      <span className="contact-detail-value">Oldtown, FL (serving ~100mi radius)</span>
+                      <span className="contact-detail-value">Old Town, FL (serving ~100mi radius)</span>
                     </div>
                   </div>
                 </div>

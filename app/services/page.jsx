@@ -53,8 +53,8 @@ const faqs = [
     a: 'Most websites are complete within 2–4 weeks depending on how quickly we can collect your content and feedback.',
   },
   {
-    q: 'Do you work with businesses outside of Oldtown, FL?',
-    a: 'We serve businesses within roughly 100 miles of Oldtown, FL. This lets us deeply understand the local market and serve clients more personally.',
+    q: 'Do you work with businesses outside of Old Town, FL?',
+    a: 'We serve businesses within roughly 100 miles of Old Town, FL. This lets us deeply understand the local market and serve clients more personally.',
   },
   {
     q: 'What if I just need one thing, like a Google Business setup?',

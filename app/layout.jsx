@@ -4,15 +4,15 @@ import Footer from '../components/Footer';
 
 export const metadata = {
   title: {
-    default: 'Cromis Digital — Local Digital Marketing, Oldtown FL',
+    default: 'Cromis Digital — Local Digital Marketing, Old Town FL',
     template: '%s | Cromis Digital',
   },
   description:
-    'Cromis Digital helps local businesses in Oldtown, FL get found online, generate leads, and grow. No contracts. Direct owner access. AI-powered results.',
+    'Cromis Digital helps local businesses in Old Town, FL get found online, generate leads, and grow. No contracts. Direct owner access. AI-powered results.',
   keywords: [
     'digital marketing',
     'local SEO',
-    'Oldtown FL',
+    'Old Town FL',
     'small business website',
     'Google Business Profile',
     'web design Florida',
@@ -23,15 +23,15 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: 'Cromis Digital',
-    title: 'Cromis Digital — Local Digital Marketing, Oldtown FL',
+    title: 'Cromis Digital — Local Digital Marketing, Old Town FL',
     description:
-      'No contracts. No big agency runaround. You work directly with the owner. Based in Oldtown, FL.',
+      'No contracts. No big agency runaround. You work directly with the owner. Based in Old Town, FL.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cromis Digital — Local Digital Marketing, Oldtown FL',
+    title: 'Cromis Digital — Local Digital Marketing, Old Town FL',
     description:
-      'No contracts. No big agency runaround. You work directly with the owner. Based in Oldtown, FL.',
+      'No contracts. No big agency runaround. You work directly with the owner. Based in Old Town, FL.',
   },
   robots: {
     index: true,

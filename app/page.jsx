@@ -5,7 +5,7 @@ import '../src/styles/home.css';
 export const metadata = {
   title: 'Cromis Digital — Get Found, Get Leads, and Grow',
   description:
-    'Cromis Digital helps local businesses in Oldtown, FL get found online, generate leads, and grow. No contracts. Direct owner access. AI-powered results.',
+    'Cromis Digital helps local businesses in Old Town, FL get found online, generate leads, and grow. No contracts. Direct owner access. AI-powered results.',
 };
 
 const steps = [
@@ -44,7 +44,7 @@ const whyCards = [
   {
     stat: '100mi',
     title: '100 Mile Radius',
-    desc: 'We focus on businesses within 100 miles of Oldtown, FL — so we know your market.',
+    desc: 'We focus on businesses within 100 miles of Old Town, FL — so we know your market.',
   },
   {
     stat: '1:1',
@@ -72,14 +72,14 @@ export default function HomePage() {
         <div className="hero-glow" />
         <div className="container">
           <div className="hero-content">
-            <div className="hero-badge">Serving Oldtown, FL &amp; Surrounding Area</div>
+            <div className="hero-badge">Serving Old Town, FL &amp; Surrounding Area</div>
             <h1 className="hero-headline">
               We Help Local Businesses<br />
               <span className="accent">Get Found, Get Leads,</span><br />
               and Grow.
             </h1>
             <p className="hero-sub">
-              Based in Oldtown, FL. No contracts. No big agency runaround.
+              Based in Old Town, FL. No contracts. No big agency runaround.
               You work directly with the owner.
             </p>
             <div className="hero-ctas">
