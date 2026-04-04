@@ -73,7 +73,7 @@ export default function HomePage() {
         <div className="hero-glow" />
         <div className="container">
           <div className="hero-content">
-            <div className="hero-badge">Serving Old Town, FL &amp; Surrounding Area</div>
+            <div className="hero-badge">Web Design &amp; Digital Services | Old Town, FL &amp; Surrounding Area</div>
             <h1 className="hero-headline">
               We Help Local Businesses<br />
               <span className="accent">Get Found, Get Leads,</span><br />
