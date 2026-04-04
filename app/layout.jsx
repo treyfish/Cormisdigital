@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 export const metadata = {
   title: {
-    default: 'Cromis Digital — Local Digital Marketing, Old Town FL',
+    default: 'Cromis Digital — Web Design & Digital Marketing | Old Town, FL',
     template: '%s | Cromis Digital',
   },
   description:
@@ -23,13 +23,13 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: 'Cromis Digital',
-    title: 'Cromis Digital — Local Digital Marketing, Old Town FL',
+    title: 'Cromis Digital — Web Design & Digital Marketing | Old Town, FL',
     description:
       'No contracts. No big agency runaround. You work directly with the owner. Based in Old Town, FL.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cromis Digital — Local Digital Marketing, Old Town FL',
+    title: 'Cromis Digital — Web Design & Digital Marketing | Old Town, FL',
     description:
       'No contracts. No big agency runaround. You work directly with the owner. Based in Old Town, FL.',
   },
