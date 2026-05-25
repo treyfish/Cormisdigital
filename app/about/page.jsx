@@ -5,7 +5,7 @@ import '../../src/styles/pages.css';
 export const metadata = {
   title: 'About — Trey Holland, Owner of Cromis Digital',
   description:
-    'Trey Holland is a former fisheries biologist who brought scientific precision into digital marketing. Local to Old Town, FL. No agency runaround — you deal directly with the owner.',
+    'Trey Holland is a former fisheries biologist who brought scientific precision into digital marketing. Based in Old Town, FL, serving local service businesses across the state. No agency runaround — you deal directly with the owner.',
 };
 
 const values = [
@@ -80,11 +80,11 @@ export default function AboutPage() {
               </p>
               <p>
                 You work directly with the owner. Every time. No account managers,
-                no handoffs, no corporate runaround. Trey handles your website
-                and your Google presence — using efficient, modern tools that cut
-                the cost and timeline of traditional agencies — and he only works
-                within about 100 miles of Old Town. Not because he has to.
-                Because he knows this market and wants to stay close to it.
+                no handoffs, no corporate runaround. Trey builds your website, sets up
+                the AI systems that catch your leads, and handles your Google presence —
+                using efficient, modern tools that cut the cost and timeline of
+                traditional agencies. Based in Old Town, FL, he works with local
+                service businesses across the state.
               </p>
               <p>
                 No long-term contracts. No mystery invoices. Just a local business

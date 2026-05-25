@@ -27,11 +27,11 @@ const steps = [
   },
   {
     title: 'We Build It Right',
-    desc: 'A clean, professional website built for your market — mobile-ready, fast, and set up to show up on Google.',
+    desc: 'A fast, mobile-ready website — plus the AI systems that catch your leads — built for your market and set up to show up on Google.',
   },
   {
     title: 'You Stay Visible',
-    desc: 'Monthly hosting and care keeps your site live and up to date. Small edits whenever you need them.',
+    desc: 'Ongoing support keeps your site live, your lead system running, and your Google presence growing. Small edits whenever you need them.',
   },
 ];
 
@@ -83,7 +83,7 @@ export default function HomePage() {
         <div className="hero-glow" />
         <div className="container">
           <div className="hero-content">
-            <div className="hero-badge">Web Design &amp; Digital Services | Old Town, FL &amp; Surrounding Area</div>
+            <div className="hero-badge">Websites &amp; AI Systems | Serving Local Businesses Across Florida</div>
             <h1 className="hero-headline">
               Websites and AI systems<br />
               <span className="accent">that catch every lead.</span>

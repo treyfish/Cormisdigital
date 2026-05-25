@@ -87,11 +87,11 @@ export default function ContactForm() {
 
         <div className="form-group">
           <label htmlFor="service">What Do You Need Help With?</label>
-          <select id="service" name="service" required>
-            <option value="" disabled defaultValue="">Select a service...</option>
-            <option value="website">Website Build</option>
-            <option value="google">Google Business Profile</option>
-            <option value="monthly">Hosting &amp; Care</option>
+          <select id="service" name="service" required defaultValue="">
+            <option value="" disabled>Select a service...</option>
+            <option value="website">Custom Website</option>
+            <option value="lead-system">Never Miss a Lead (AI System)</option>
+            <option value="seo">Local SEO &amp; Google Business Profile</option>
             <option value="not-sure">Not Sure — Let&#39;s Talk</option>
           </select>
         </div>

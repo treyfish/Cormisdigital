@@ -34,7 +34,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="footer-tagline">
-              Local digital marketing built for small businesses. Based in Old Town, FL.
+              Websites and AI systems for local service businesses. Based in Old Town, FL — serving the whole state.
             </p>
           </div>
 

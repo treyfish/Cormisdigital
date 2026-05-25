@@ -5,7 +5,9 @@
       "Bash(npm run:*)",
       "Bash(npx vercel:*)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(vercel --version)"
+      "Bash(vercel --version)",
+      "mcp__0f80478d-0450-4876-a49b-0e633ddde048__deploy_to_vercel",
+      "mcp__0f80478d-0450-4876-a49b-0e633ddde048__list_deployments"
     ]
   }
 }
