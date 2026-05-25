@@ -71,7 +71,7 @@ export default function Nav() {
         </ul>
 
         <div className="nav-cta">
-          <Link href="/contact" className="btn-primary">Free Consultation</Link>
+          <Link href="/contact" className="btn-primary">Get a Free Quote</Link>
         </div>
 
         <button
@@ -93,7 +93,7 @@ export default function Nav() {
             </Link>
           ))}
           <div className="nav-mobile-cta">
-            <Link href="/contact" className="btn-primary">Free Consultation</Link>
+            <Link href="/contact" className="btn-primary">Get a Free Quote</Link>
           </div>
         </div>
       )}

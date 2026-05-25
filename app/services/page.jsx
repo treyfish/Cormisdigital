@@ -3,46 +3,60 @@ import ScrollReveal from '../../components/ScrollReveal';
 import '../../src/styles/pages.css';
 
 export const metadata = {
-  title: 'Services — Simple, Honest Web Pricing for Local Businesses',
+  title: 'Services — Websites, AI Lead Systems & Local SEO',
   description:
-    'Two clear services: a professional website build starting at $500, and monthly hosting & care for $50/month. No contracts, no surprises.',
+    'Custom websites, AI-powered lead systems, and local SEO for service businesses across Florida. Pricing is custom to your business. No contracts.',
 };
 
 const tiers = [
   {
-    tag: 'Tier 1 — One-Time',
-    name: 'Website Build',
-    price: '$500',
-    priceNote: 'one-time — $750 for larger sites (4–5 pages)',
-    desc: 'A clean, professional website built for your business and your market. Ready to launch, ready to be found. You get a site that works — mobile, fast, and set up right from day one.',
+    tag: 'Websites',
+    name: 'Custom Websites',
+    desc: 'A fast, mobile-first website built to turn visitors into customers. Hand-built on Next.js — no templates, no page builders, no bloat. You get a site that loads fast, looks sharp, and is set up to be found on Google from day one.',
     features: [
-      '1–3 page professional website',
-      'Mobile-ready & fast-loading',
-      'Google Business Profile setup (if needed)',
+      'Hand-built on Next.js — no templates',
+      'Fast-loading & mobile-first',
+      'Designed to convert visitors into customers',
       'Contact form & click-to-call',
       'Built to show up on Google',
-      'Handed off ready to go',
+      'You own it — no platform lock-in',
     ],
   },
   {
-    tag: 'Tier 2 — Monthly',
-    name: 'Hosting & Care',
-    price: '$50',
-    priceNote: 'per month — no contract, cancel anytime',
-    desc: 'Your site stays live, secure, and up to date. Need to change your hours, update a price, or swap a photo? Just send a message. You run your business — I handle the website.',
+    tag: 'AI Lead System',
+    badge: 'Featured',
+    name: 'Never Miss a Lead',
+    desc: 'An AI-powered system that makes sure no lead slips through the cracks. When you can’t pick up, it texts the caller back automatically, captures and summarizes every lead, and keeps your reviews growing — all while you’re out on the job.',
     features: [
-      'Site stays live & secure',
-      'Small edits whenever you need them',
-      'Updates handled for you',
-      'No contract — cancel anytime',
+      'Auto-texts back when you miss a call',
+      'Captures & summarizes every lead',
+      'Automated review requests',
+      'Works while you’re on the job',
+      'Keeps every lead in one place',
+    ],
+  },
+  {
+    tag: 'Local SEO',
+    name: 'Local SEO & Google Business Profile',
+    desc: 'Show up when your customers are searching. We optimize your Google Business Profile and local presence so you appear in the map pack and local results — and we keep it working with ongoing posts and reporting.',
+    features: [
+      'Google Business Profile optimization',
+      'Weekly Google posts',
+      'Ongoing local SEO',
+      'Review strategy',
+      'Monthly reporting',
     ],
   },
 ];
 
 const faqs = [
   {
+    q: 'How much does it cost?',
+    a: 'Every business is different, so pricing is custom. Reach out for a free quote — you’ll get a straight answer on what makes sense for your situation, with no obligation.',
+  },
+  {
     q: 'Do I need to sign a long-term contract?',
-    a: 'No. The website build is a one-time project — you pay once, you own it. Monthly hosting is month-to-month with no commitment. Cancel whenever you want.',
+    a: 'No long-term contracts, ever. Your website is a one-time build that you own. Ongoing services like the lead system and SEO are month-to-month — cancel anytime.',
   },
   {
     q: 'Who will I be working with?',
@@ -54,11 +68,7 @@ const faqs = [
   },
   {
     q: 'Do you work with businesses outside of Old Town, FL?',
-    a: 'We serve businesses within roughly 100 miles of Old Town, FL. This lets us deeply understand the local market and serve clients more personally.',
-  },
-  {
-    q: 'What if I just need one thing, like a Google Business setup?',
-    a: 'Reach out. We can discuss what makes sense for your situation. Not everything needs to be a full package.',
+    a: 'Yes. We’re based in Old Town, FL and work with local service businesses across the state.',
   },
 ];
 
@@ -68,10 +78,11 @@ export default function ServicesPage() {
       <div className="page-hero">
         <div className="container">
           <span className="section-label">Services</span>
-          <h1>Clear Pricing.<br />Real Results.</h1>
+          <h1>Websites, AI Systems,<br />and Local SEO.</h1>
           <p>
-            Two services. Flat prices. No contracts. Built for local businesses
-            that want a website that actually works.
+            Three ways we help local service businesses across Florida get found
+            and catch every lead. Every business is different — pricing is custom,
+            and there are no long-term contracts.
           </p>
         </div>
       </div>
@@ -84,11 +95,10 @@ export default function ServicesPage() {
                 <div className="tier-card">
                   <div className="tier-left">
                     <span className="tier-tag">{t.tag}</span>
+                    {t.badge && <span className="tier-badge">{t.badge}</span>}
                     <h2>{t.name}</h2>
-                    <div className="tier-price">{t.price}</div>
-                    <div className="tier-price-note">{t.priceNote}</div>
                     <Link href="/contact" className="btn-primary tier-cta">
-                      Get Started
+                      Get a Free Quote
                     </Link>
                   </div>
                   <div className="tier-right">

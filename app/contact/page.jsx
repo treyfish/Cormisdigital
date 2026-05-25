@@ -29,8 +29,8 @@ export default function ContactPage() {
               <div className="contact-info">
                 <h2>Get In Touch</h2>
                 <p>
-                  Whether you need a full website build or just want to know what&#39;s
-                  holding your Google Business Profile back — reach out. We respond fast.
+                  Whether you need a new website, an AI system to catch the leads you&#39;re
+                  missing, or help with your Google Business Profile — reach out. We respond fast.
                 </p>
 
                 <div className="contact-details">
@@ -62,7 +62,7 @@ export default function ContactPage() {
                     </div>
                     <div className="contact-detail-content">
                       <span className="contact-detail-label">Location</span>
-                      <span className="contact-detail-value">Old Town, FL (serving ~100mi radius)</span>
+                      <span className="contact-detail-value">Old Town, FL (serving all of Florida)</span>
                     </div>
                   </div>
                 </div>
