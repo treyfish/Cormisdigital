@@ -4,9 +4,20 @@ import InteractiveDotGrid from '../components/InteractiveDotGrid';
 import '../src/styles/home.css';
 
 export const metadata = {
-  title: 'Cromis Digital — Get Found, Get Leads, and Grow',
+  title: {
+    absolute: 'Cromis Digital — Websites + AI Systems for Local Service Businesses',
+  },
   description:
-    'Cromis Digital helps local businesses in Old Town, FL get found online, generate leads, and grow. No contracts. Direct owner access. AI-powered results.',
+    'Cromis Digital builds custom websites and AI-powered systems for local service businesses across Florida. Catch every lead. No contracts. Direct owner access.',
+  keywords: [
+    'custom websites Florida',
+    'AI lead system',
+    'missed call text back',
+    'local SEO',
+    'Google Business Profile',
+    'service business marketing',
+    'Old Town FL',
+  ],
 };
 
 const steps = [
@@ -26,26 +37,25 @@ const steps = [
 
 const serviceCards = [
   {
-    tag: 'One-Time',
-    name: 'Website Build',
-    price: '$500',
-    priceNote: 'one-time',
-    desc: 'A professional website built for your business. Mobile-ready, fast, and set up to get found on Google.',
+    name: 'Custom Websites',
+    desc: 'Modern, fast, mobile-first sites built to convert visitors into customers. Hand-built on Next.js. No templates.',
   },
   {
-    tag: 'Monthly',
-    name: 'Hosting & Care',
-    price: '$50',
-    priceNote: '/month',
-    desc: 'Your site stays live, secure, and up to date. Small edits when you need them. No contract, cancel anytime.',
+    name: 'Never Miss a Lead',
+    badge: 'Featured',
+    desc: 'AI-powered system that auto-texts back when you miss a call, captures and summarizes leads, and automates review requests.',
+  },
+  {
+    name: 'Local SEO & Google Business Profile',
+    desc: 'Show up when your customers are searching. Ongoing optimization, weekly posts, and monthly reporting.',
   },
 ];
 
 const whyCards = [
   {
-    stat: '100mi',
-    title: '100 Mile Radius',
-    desc: 'We focus on businesses within 100 miles of Old Town, FL — so we know your market.',
+    stat: 'FL',
+    title: 'Florida-Wide',
+    desc: 'Based in Old Town, FL. Serving service businesses across the state.',
   },
   {
     stat: '1:1',
@@ -75,17 +85,17 @@ export default function HomePage() {
           <div className="hero-content">
             <div className="hero-badge">Web Design &amp; Digital Services | Old Town, FL &amp; Surrounding Area</div>
             <h1 className="hero-headline">
-              We Help Local Businesses<br />
-              <span className="accent">Get Found, Get Leads,</span><br />
-              and Grow.
+              Websites and AI systems<br />
+              <span className="accent">that catch every lead.</span>
             </h1>
             <p className="hero-sub">
-              Based in Old Town, FL. No contracts. No big agency runaround.
-              You work directly with the owner.
+              Custom-built sites paired with automated systems that recover
+              missed calls, summarize leads, and request reviews automatically.
+              Built for local service businesses across Florida.
             </p>
             <div className="hero-ctas">
-              <Link href="/services" className="btn-primary">See Our Services</Link>
-              <Link href="/contact" className="btn-outline">Get a Free Consultation</Link>
+              <Link href="/contact" className="btn-primary">Get a Free Strategy Call</Link>
+              <a href="#recent-work" className="btn-outline">See Recent Work</a>
             </div>
           </div>
         </div>
@@ -123,27 +133,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Preview */}
+      {/* What We Build */}
       <section className="section services-preview">
         <div className="container">
           <ScrollReveal>
             <div className="services-preview-header">
               <div>
-                <span className="section-label">What We Offer</span>
-                <h2>Everything Your Business Needs to Compete Online</h2>
+                <span className="section-label">What We Build</span>
+                <h2>Websites and Systems Built to Win More Work</h2>
               </div>
               <Link href="/services">View all services →</Link>
             </div>
           </ScrollReveal>
-          <div className="services-cards">
+          <div className="services-cards services-cards-3">
             {serviceCards.map((s, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
                 <div className="service-card">
-                  <span className="service-card-tag">{s.tag}</span>
+                  {s.badge && <span className="service-card-badge">{s.badge}</span>}
                   <h3>{s.name}</h3>
-                  <div className="service-card-price">
-                    {s.price} <span>{s.priceNote}</span>
-                  </div>
                   <p>{s.desc}</p>
                   <Link href="/services" className="service-card-link">
                     Learn More →
@@ -152,6 +159,12 @@ export default function HomePage() {
               </ScrollReveal>
             ))}
           </div>
+          <ScrollReveal>
+            <div className="services-quote">
+              <p>Every business is different. Get a free quote.</p>
+              <Link href="/contact" className="btn-primary">Get a Free Quote</Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -176,6 +189,38 @@ export default function HomePage() {
               </ScrollReveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Recent Work */}
+      <section className="section recent-work" id="recent-work">
+        <div className="container">
+          <ScrollReveal>
+            <div className="recent-work-header">
+              <span className="section-label">Recent Work</span>
+              <h2>Real Businesses. Real Results.</h2>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className="recent-work-card">
+              <div className="recent-work-image">
+                <img src="/photos/rlsiteworks-screenshot.jpg" alt="R L Site Works, LLC website" />
+              </div>
+              <div className="recent-work-body">
+                <h3>R L Site Works, LLC</h3>
+                <span className="recent-work-subtitle">Tree &amp; site services · Lake City, FL</span>
+                <p>Full website rebuild from Wix to Next.js with Google Business Profile optimization.</p>
+                <a
+                  href="https://www.rlsiteworksllc.com"
+                  className="recent-work-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Site →
+                </a>
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

@@ -60,7 +60,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <span className="footer-copy">
-            © 2025 <span className="footer-accent">Cromis Digital</span>. All rights reserved.
+            © 2026 <span className="footer-accent">Cromis Digital</span>. All rights reserved.
           </span>
           <span className="footer-copy">
             Built for local businesses that deserve more.
