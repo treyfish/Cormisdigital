@@ -5,17 +5,28 @@ import { useState } from 'react';
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   async function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);
+    setError(false);
     const formData = new FormData(e.target);
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData,
-    });
-    setLoading(false);
-    if (res.ok) setSubmitted(true);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (submitted) {
@@ -40,6 +51,7 @@ export default function ContactForm() {
       <h2>Send a Message</h2>
       <form onSubmit={handleSubmit}>
         <input type="hidden" name="access_key" value="7c2cc1ac-61ca-4ced-a5f5-ae969a244cd3" />
+        <input type="checkbox" name="botcheck" className="botcheck" tabIndex="-1" autoComplete="off" aria-hidden="true" />
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="name">Your Name</label>
@@ -104,6 +116,13 @@ export default function ContactForm() {
             placeholder="Tell us a bit about your business, your goals, or any specific challenges you're facing..."
           />
         </div>
+
+        {error && (
+          <div className="form-error" role="alert">
+            Something went wrong sending your message. Please try again, or call
+            or text <a href="tel:+13529497355">(352) 949-7355</a> instead.
+          </div>
+        )}
 
         <div className="form-submit">
           <button type="submit" className="btn-primary" disabled={loading}>

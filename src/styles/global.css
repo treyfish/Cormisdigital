@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +14,7 @@
   --gray: #888888;
   --border: #222222;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
 }
 
 html {
@@ -129,6 +128,13 @@ h1, h2, h3, h4 {
   font-weight: 800;
 }
 
+/* Display serif for major headlines — pairs with the serif in the logo wordmark */
+h1, h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
 /* Dividers */
 .divider {
   height: 1px;
@@ -185,7 +191,7 @@ h1, h2, h3, h4 {
 }
 
 .wave-cromis {
-  font-family: Georgia, serif;
+  font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.25rem;
   color: #ffffff;

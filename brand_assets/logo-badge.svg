@@ -1,0 +1,29 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waveTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00c6ff"/>
+      <stop offset="100%" stop-color="#0072ff"/>
+    </linearGradient>
+    <linearGradient id="waveBottom" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0050aa"/>
+      <stop offset="100%" stop-color="#2a6ab0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- badge circle -->
+  <circle cx="512" cy="512" r="512" fill="#0d0d0d"/>
+
+  <!-- waves: broad S-curves like the concept art, drawn with brand gradients -->
+  <path d="M252,330 C322,246 426,246 502,316 C578,386 686,386 772,308"
+        fill="none" stroke="url(#waveTop)" stroke-width="42" stroke-linecap="round"/>
+  <path d="M252,452 C322,376 426,372 502,436 C578,500 686,502 772,430"
+        fill="none" stroke="url(#waveBottom)" stroke-width="42" stroke-linecap="round"/>
+
+  <!-- wordmark -->
+  <text x="512" y="688" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-weight="600" font-size="176"
+        fill="#ffffff" letter-spacing="2">Cromis</text>
+  <text x="524" y="790" text-anchor="middle"
+        font-family="Inter, sans-serif" font-weight="600" font-size="56"
+        fill="#00c6ff" letter-spacing="24">DIGITAL</text>
+</svg>

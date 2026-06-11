@@ -3,6 +3,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 export const metadata = {
+  metadataBase: new URL('https://cromisdigital.com'),
   title: {
     default: 'Cromis Digital — Web Design & Digital Marketing | Old Town, FL',
     template: '%s | Cromis Digital',
@@ -26,12 +27,21 @@ export const metadata = {
     title: 'Cromis Digital — Web Design & Digital Marketing | Old Town, FL',
     description:
       'No contracts. No big agency runaround. You work directly with the owner. Based in Old Town, FL.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Cromis Digital — Websites and AI systems that catch every lead.',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Cromis Digital — Web Design & Digital Marketing | Old Town, FL',
     description:
       'No contracts. No big agency runaround. You work directly with the owner. Based in Old Town, FL.',
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
@@ -46,7 +56,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
           rel="stylesheet"
         />
       </head>

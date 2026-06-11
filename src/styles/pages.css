@@ -112,7 +112,7 @@
 
 .tier-left h2 {
   font-size: 26px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
 }
@@ -451,7 +451,7 @@
 
 .contact-form-wrap h2 {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 32px;
 }
@@ -520,6 +520,30 @@
   resize: vertical;
   min-height: 120px;
   line-height: 1.6;
+}
+
+.botcheck {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-error {
+  background: rgba(221, 76, 55, 0.08);
+  border: 1px solid rgba(221, 76, 55, 0.35);
+  color: #e0705c;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+}
+
+.form-error a {
+  color: #e0705c;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .form-submit {
