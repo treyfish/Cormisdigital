@@ -43,7 +43,7 @@ const serviceCards = [
   {
     name: 'Never Miss a Lead',
     badge: 'Featured',
-    desc: 'AI-powered system that auto-texts back when you miss a call, captures and summarizes leads, and automates review requests.',
+    desc: 'AI-powered systems that auto-text back when you miss a call, follow up on every quote you send, re-engage past customers, and automate review requests.',
   },
   {
     name: 'Local SEO & Google Business Profile',

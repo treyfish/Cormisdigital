@@ -103,6 +103,7 @@ export default function ContactForm() {
             <option value="" disabled>Select a service...</option>
             <option value="website">Custom Website</option>
             <option value="lead-system">Never Miss a Lead (AI System)</option>
+            <option value="automations">AI Automations (Quote Follow-Up &amp; Reactivation)</option>
             <option value="seo">Local SEO &amp; Google Business Profile</option>
             <option value="not-sure">Not Sure — Let&#39;s Talk</option>
           </select>

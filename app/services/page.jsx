@@ -23,13 +23,15 @@ const tiers = [
     ],
   },
   {
-    tag: 'AI Lead System',
+    tag: 'AI Systems',
     badge: 'Featured',
     name: 'Never Miss a Lead',
-    desc: 'An AI-powered system that makes sure no lead slips through the cracks. When you can’t pick up, it texts the caller back automatically, captures and summarizes every lead, and keeps your reviews growing — all while you’re out on the job.',
+    desc: 'AI-powered systems that make sure no lead slips through the cracks — at any stage. When you can’t pick up, it texts the caller back automatically, captures and summarizes every lead, follows up on the quotes you send, and keeps your reviews growing — all while you’re out on the job.',
     features: [
       'Auto-texts back when you miss a call',
       'Captures & summarizes every lead',
+      'Estimate follow-up — automatically chases every quote you send',
+      'Customer reactivation — texts past customers when it’s time to come back',
       'Automated review requests',
       'Works while you’re on the job',
       'Keeps every lead in one place',
