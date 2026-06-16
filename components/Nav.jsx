@@ -78,6 +78,8 @@ export default function Nav() {
           className={`nav-toggle${open ? ' open' : ''}`}
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
+          aria-expanded={open}
+          aria-controls="nav-mobile-menu"
         >
           <span />
           <span />
@@ -86,7 +88,7 @@ export default function Nav() {
       </div>
 
       {open && (
-        <div className="nav-mobile-menu">
+        <div className="nav-mobile-menu" id="nav-mobile-menu">
           {[['/', 'Home'], ['/services', 'Services'], ['/about', 'About'], ['/contact', 'Contact']].map(([href, label]) => (
             <Link key={href} href={href} className={isActive(href) ? 'active' : ''}>
               {label}

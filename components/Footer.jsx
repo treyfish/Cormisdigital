@@ -58,6 +58,13 @@ export default function Footer() {
           </div>
         </div>
 
+        <nav className="footer-legal" aria-label="Legal">
+          <Link href="/privacy">Privacy Policy</Link>
+          <Link href="/terms">Terms of Service</Link>
+          <Link href="/accessibility">Accessibility</Link>
+          <Link href="/contact">Contact</Link>
+        </nav>
+
         <div className="footer-bottom">
           <span className="footer-copy">
             © 2026 <span className="footer-accent">Cromis Digital</span>. All rights reserved.
