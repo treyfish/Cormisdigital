@@ -63,6 +63,21 @@ export default function PrivacyPage() {
               for security and operational purposes. If we add analytics in the
               future, we will update this policy.
             </p>
+            <p>
+              The Site loads the Inter font from Google Fonts. When your browser
+              requests the font, Google receives standard request information
+              such as your IP address. Google&rsquo;s use of that data is
+              governed by{' '}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google&rsquo;s privacy policy
+              </a>
+              . We are evaluating self-hosting the font to remove this
+              third-party request.
+            </p>
 
             <h2>3. How we use information</h2>
             <ul>

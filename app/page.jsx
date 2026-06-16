@@ -74,9 +74,39 @@ const whyCards = [
   },
 ];
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Cromis Digital',
+  description:
+    'Custom websites and AI-powered systems for local service businesses across Florida.',
+  url: 'https://www.cromisdigital.com',
+  telephone: '+1-352-949-7355',
+  email: 'TreyHolland@cromisdigital.com',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Old Town',
+    addressRegion: 'FL',
+    addressCountry: 'US',
+  },
+  areaServed: {
+    '@type': 'State',
+    name: 'Florida',
+  },
+  founder: {
+    '@type': 'Person',
+    name: 'Trey Holland',
+  },
+  priceRange: '$$',
+};
+
 export default function HomePage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       {/* Hero */}
       <section className="hero">
         <InteractiveDotGrid />
