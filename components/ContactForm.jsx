@@ -51,6 +51,7 @@ export default function ContactForm() {
       <h2>Send a Message</h2>
       <form onSubmit={handleSubmit}>
         <input type="hidden" name="access_key" value="7c2cc1ac-61ca-4ced-a5f5-ae969a244cd3" />
+        {/* Web3Forms honeypot — bots fill it, humans don't see it. */}
         <input type="checkbox" name="botcheck" className="botcheck" tabIndex="-1" autoComplete="off" aria-hidden="true" />
         <div className="form-row">
           <div className="form-group">
